@@ -9,5 +9,6 @@ package calculadora.operaciones;
  * @author mundo joven
  */
 public class RaizCuadrada {
+    private int num;
     
 }
