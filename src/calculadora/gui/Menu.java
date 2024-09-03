@@ -15,8 +15,8 @@ public class Menu {
         
         
         String opcion = "";
-        while(!opcion.equals("6")){   
-        System.out.println("1. suma, 2. restar, 3. multiplicar, 4. dividir, 5. limpiar, 6. salir");
+        while(!opcion.equals("5")){   
+        System.out.println("1. suma, 2. restar, 3. multiplicar, 4. dividir, 5. salir");
         opcion = entrada.nextLine(); 
         double acomulado = 0;
             
