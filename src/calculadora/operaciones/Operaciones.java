@@ -1,10 +1,10 @@
 
 package calculadora.operaciones;
 
-public class Calculadora {
+public class Operaciones{
     
 
-    public Calculadora() {
+    public Operaciones() {
        
     }
     public double sumar(double num1, double num2){
