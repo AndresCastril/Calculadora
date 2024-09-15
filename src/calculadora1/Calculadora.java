@@ -1,7 +1,6 @@
 
-package Calculadora.gui;
+package calculadora1;
 import java.util.Scanner;
-import calculadora.operaciones.Operaciones;
 import javax.swing.JOptionPane;
 
 

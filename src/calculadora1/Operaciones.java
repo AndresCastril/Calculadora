@@ -1,5 +1,5 @@
 
-package calculadora.operaciones;
+package calculadora1;
 
 public class Operaciones{
     
