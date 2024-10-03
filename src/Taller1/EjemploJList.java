@@ -12,7 +12,7 @@ public class EjemploJList {
         ventana.setSize(800, 500);
         ventana.setLayout(null);
         
-         DefaultListModel<String> modeloLista = new DefaultListModel<>();
+        DefaultListModel<String> modeloLista = new DefaultListModel<>();
         modeloLista.addElement("Cristian");
         modeloLista.addElement("Julian");
         modeloLista.addElement("Milena");
@@ -22,8 +22,8 @@ public class EjemploJList {
       
         
         JScrollPane scroll = new JScrollPane(listaNombres);
-         ventana.add(scroll);
-         scroll.setBounds(10, 50, 300,300);
+        ventana.add(scroll);
+        scroll.setBounds(10, 50, 300,300);
         
         
         JTextField campo = new JTextField();

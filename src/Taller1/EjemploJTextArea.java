@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 public class EjemploJTextArea {
     public static void main(String[] args) {
-         JFrame ventana = new JFrame("ventana");
+         JFrame ventana = new JFrame("Correo");
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setSize(800, 500);
         ventana.setLayout(null);

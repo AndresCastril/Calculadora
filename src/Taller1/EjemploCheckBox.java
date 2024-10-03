@@ -10,7 +10,7 @@ public class EjemploCheckBox {
     que permiten al usuario seleccionar una o mas
     de las opciones propuestas
          */
-    JFrame ventana = new JFrame("ventana");
+    JFrame ventana = new JFrame("ventana ejemplo CheckBox");
     ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     ventana.setSize(800, 500);
     ventana.setLayout(null);
