@@ -15,23 +15,27 @@ public class EjemploCheckBox {
     ventana.setSize(800, 500);
     ventana.setLayout(null);
     
+    JLabel etiqueta = new JLabel("Seleccione todas las frutas: ");
+    etiqueta.setBounds(5, 5, 250, 50);
+    ventana.add(etiqueta);
+    
     JButton boton = new JButton("Terminar");
     boton.setBounds(50, 150, 100, 30);
     ventana.add(boton);
 
     JCheckBox check1=new JCheckBox();
-    check1.setText("check1");
-    check1.setBounds(20, 30, 120, 30);
+    check1.setText("Banano");
+    check1.setBounds(20, 50, 120, 30);
     ventana.add(check1);
   
     JCheckBox check2=new JCheckBox();
-    check2.setText("check2");
-    check2.setBounds(20, 60, 120, 30);
+    check2.setText("Manzana");
+    check2.setBounds(20, 80, 120, 30);
     ventana.add(check2);
   
     JCheckBox check3=new JCheckBox();
-    check3.setText("check3");
-    check3.setBounds(20, 90, 120, 30);
+    check3.setText("Brócoli");
+    check3.setBounds(20, 110, 120, 30);
     ventana.add(check3);
     
      boton.addMouseListener(new MouseAdapter(){
@@ -40,13 +44,16 @@ public class EjemploCheckBox {
                String cad = "";
 
         if (check1.isSelected()) {
-            cad += "Check 1 Seleccionado. ";
+            cad = "banano es fruta. te falta una fruta por seleccionar ";
         }
         if (check2.isSelected()) {
-            cad += "Check 2 Seleccionado. ";
+            cad = "Manzana es fruta. te falta una fruta por seleccionar ";
         }
         if (check3.isSelected()) {
-            cad += "Check 3 Seleccionado. ";
+            cad = "Brócoli no es una fruta, es una verduta!!. ";
+        }
+        if(check1.isSelected() & check2.isSelected() & !check3.isSelected()){
+            cad = "Manzana y Banano son frutas, es correcto!!. ";
         }
 
         JOptionPane.showMessageDialog(null, cad);
