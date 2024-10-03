@@ -46,7 +46,7 @@ public class EjemploJTextArea {
                + "\n mensaje: \n" + escrito);
                 }
                 else{
-                    JOptionPane.showMessageDialog(null, "Lleno todos los campos", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Llene todos los campos", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
