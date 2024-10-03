@@ -2,18 +2,14 @@ package CalculadoraUAM;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
+import javax.swing.*;
 
 public class CalculadoraUAM {
 
     public static void main(String[] args) {
+        
         JFrame ventana = new JFrame("Calculadora UAM");
+        
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setSize(800, 600);
         ventana.setLayout(null);
@@ -22,8 +18,7 @@ public class CalculadoraUAM {
         etiqueta.setBounds(330, 10, 150, 50);
         ventana.add(etiqueta);
 
-        JLabel etiqueta2 = new JLabel();
-        etiqueta2.setText("numero 1");
+        JLabel etiqueta2 = new JLabel("numero 1");
         etiqueta2.setBounds(130, 100, 150, 30);
         ventana.add(etiqueta2);
 
@@ -92,7 +87,7 @@ public class CalculadoraUAM {
         calcular.setBounds(320, 450, 150, 30);
         ventana.add(calcular);
 
-        ventana.setVisible(true);
+    
         boton1.addMouseListener(new MouseAdapter() {
             // Acción a realizar cuando se hace clic 
             @Override
@@ -313,8 +308,8 @@ public class CalculadoraUAM {
             }
         });
         
-        
-
         ventana.setVisible(true);
+
+        
     }
 }
