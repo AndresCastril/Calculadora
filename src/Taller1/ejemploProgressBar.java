@@ -3,7 +3,7 @@ package Taller1;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class ejemploProgressBar {
+public class EjemploProgressBar {
 
     public static void main(String[] args) {
         JFrame ventana = new JFrame("Ejemplo de JProgressBar");
@@ -15,11 +15,11 @@ public class ejemploProgressBar {
         progressBar = new JProgressBar(0, 100);
         progressBar.setValue(0);
         progressBar.setStringPainted(true);
-        progressBar.setBounds(100, 100, 100, 100);
+        progressBar.setBounds(300, 100, 100, 70);
         ventana.add(progressBar);
 
         JButton botonIniciar = new JButton("Iniciar Progreso");
-        botonIniciar.setBounds(150, 100, 150, 30);
+        botonIniciar.setBounds(280, 10, 150, 30);
         ventana.add(botonIniciar);
         
         //Bibliografia del progreso: Oracle. "The Java™ Tutorials: Creating a GUI With JFC/Swing"
@@ -41,7 +41,10 @@ public class ejemploProgressBar {
 
                         if (value > 100) {
                             value = 100;  // Asegúrate de no sobrepasar 100
-                            ((Timer) e.getSource()).stop();  // Detener el timer
+                            ((Timer) e.getSource()).stop();
+                            JOptionPane.showMessageDialog(null, "Descarga completada");
+                             // Cerrar la ventana después del JOptionPane
+                            ventana.dispose();
                         }
 
                         progressBar.setValue(value);  // Actualizar la barra de progreso

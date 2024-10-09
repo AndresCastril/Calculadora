@@ -5,6 +5,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 
@@ -19,7 +20,7 @@ public class EjemploRadioButton {
          de usuario que permite elegir una sola opción de un 
          conjunto predeterminado de estas.
          */
-        JFrame ventana = new JFrame("ventana");
+        JFrame ventana = new JFrame("ventana ejemplo RadioButton");
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setSize(800, 500);
         ventana.setLayout(null);
@@ -27,10 +28,14 @@ public class EjemploRadioButton {
         JButton boton = new JButton("Terminar");
         boton.setBounds(50, 150, 100, 30);
         ventana.add(boton);
+        
+         JLabel etiqueta = new JLabel("En que año ocurrió el grito de independencia de Colombia?: ");
+        etiqueta.setBounds(5, 5, 450, 50);
+        ventana.add(etiqueta);
 
-        JRadioButton rbtn1 = new JRadioButton("txt1", true);
-        JRadioButton rbtn2 = new JRadioButton("txt2", false);
-        JRadioButton rbtn3 = new JRadioButton("txt3", false);
+        JRadioButton rbtn1 = new JRadioButton("1810", false);
+        JRadioButton rbtn2 = new JRadioButton("1845", false);
+        JRadioButton rbtn3 = new JRadioButton("1932", false);
 //El ButtonGroup hace que los JRadioButton funcionen
 //cuando eliges uno, los otros se desmarcan solos
         ButtonGroup grupo1 = new ButtonGroup();
@@ -53,13 +58,13 @@ public class EjemploRadioButton {
                String cad = "";
 
         if (rbtn1.isSelected()) {
-            cad += "Check 1 Seleccionado. ";
+            cad += "Es correcto!! fue en 1810";
         }
         if (rbtn2.isSelected()) {
-            cad += "Check 2 Seleccionado. ";
+            cad += "Respuesta incorrecta :( ";
         }
         if (rbtn3.isSelected()) {
-            cad += "Check 3 Seleccionado. ";
+            cad += "Respuesta incorrecta D:";
         }
 
         JOptionPane.showMessageDialog(null, cad);

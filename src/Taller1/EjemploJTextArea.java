@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 public class EjemploJTextArea {
     public static void main(String[] args) {
-         JFrame ventana = new JFrame("ventana");
+         JFrame ventana = new JFrame("Correo");
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setSize(800, 500);
         ventana.setLayout(null);
@@ -46,7 +46,7 @@ public class EjemploJTextArea {
                + "\n mensaje: \n" + escrito);
                 }
                 else{
-                    JOptionPane.showMessageDialog(null, "Lleno todos los campos", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Llene todos los campos", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
