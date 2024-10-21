@@ -56,9 +56,12 @@ public class Empleado {
     return "Cedula: " + this.cedula + "\n" +
            "Nombre: " + this.nombre + "\n" +
            "Apellido: " + this.apellido + "\n" +
-           "Salario Base: " + this.salarioBase + "\n";
-    
-    }
+           "Número de Seguro Social: " + this.numeroSeguroSocial + "\n" +
+           "Retención en la fuente: " + this.retencionFuente + "%\n" +
+           "Salario Base: " + this.salarioBase + "\n" +
+           "Solidaridad: " + this.solidaridad + "\n";
+}
+
     
     
 }
