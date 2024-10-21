@@ -8,12 +8,13 @@ import java.util.Scanner;
 import javax.swing.*;
 
 public class menu {
+    
 
     private Empresa empresa;
     private Scanner teclado;
 
-    public menu() {
-        this.empresa = new Empresa();
+    public menu(Empresa empresa) {
+        this.empresa = empresa;
         this.teclado = new Scanner(System.in);
     }
 
@@ -33,11 +34,11 @@ public class menu {
         JButton opcionSalir = new JButton("s. Salir");
         
 
-        titulo.setBounds(20, 20, 200, 30);
-        opcion1.setBounds(20, 60, 250, 30);
-        opcion2.setBounds(20, 100, 250, 30);
-        opcion3.setBounds(20, 140, 250, 30);
-        opcion4.setBounds(20, 180, 250, 30);
+        titulo.setBounds(20, 20, 300, 30);
+        opcion1.setBounds(20, 60, 350, 30);
+        opcion2.setBounds(20, 100, 350, 30);
+        opcion3.setBounds(20, 140, 350, 30);
+        opcion4.setBounds(20, 180, 350, 30);
         opcionSalir.setBounds(20, 220, 250, 30);
         
 
@@ -257,9 +258,6 @@ public class menu {
         ventana.setVisible(true);
     }
 
-    public static void main(String[] args) {
-        menu menu = new menu();
-        menu.mostrar();
-    }
+   
 
 }
