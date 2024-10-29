@@ -22,7 +22,7 @@ public class menu {
         JFrame ventana = new JFrame("Agregar empleados");
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setSize(800, 600);
-        ventana.setLayout(null); // Diseño vertical
+        ventana.setLayout(null); 
 
         // Crear los JLabels del menú
         JLabel titulo = new JLabel("Menu:");
